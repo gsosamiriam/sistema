@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size:18px;
+}
+
+.pt-20{
+    padding-top:15% !important; 
+}
+
+.bg-colores {
+    
+    background: rgb(59,24,95);
+    background: -moz-radial-gradient(circle, rgba(59,24,95,1) 0%, rgba(101,62,137,0.9248949579831933) 100%);
+    background: -webkit-radial-gradient(circle, rgba(59,24,95,1) 0%, rgba(101,62,137,0.9248949579831933) 100%);
+    background: radial-gradient(circle, rgba(59,24,95,1) 0%, rgba(101,62,137,0.9248949579831933) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b185f",endColorstr="#653e89",GradientType=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:#fff;	
+    pointer-events:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:4px solid #B374ED;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:4px solid #FDF7FA;	
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+.btn-morado{
+    padding:5px;
+    transition-duration: 0.4s;
+    background-color:#B374ED;
+    border:2px solid #3B185F;  
+    color:#ffffff;
+    box-shadow: 4px 35px 122px 4px rgba(0,0,0,0.5);
+    border-radius: 50px;
+}
+
+.btn-morado:hover{
+    background-color:#B374ED;
+    border:2px solid #fafafa;  
+    color:#000;
+}
+
+.btn-morado:active {
+    background-color:#B374ED;
+    border:2px solid #fafafa;  
+    color:#000;
+}
+
+/**/
+.navbar {
+    padding: 20px 10px;
+    background-color: #3B185F;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    z-index: 2000;
+    min-height: 9vh;
+    color: #ffffff;
+    --bs-navbar-color: #fff;
+}
+
+.morado{
+    color: #3B185F !important; 
+}
+
+.lila{
+    color: #B374ED;
+}
+
+.f36{
+    font-size: 36px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+/*.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}*/
+
+#contentNav {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#itemsNav{
+    position: absolute;
+    right: 3vh;
+}
+
+#divMenu{
+    position: absolute;
+    left: 250px;
+    top: 10vh;
+    transition:  all 1s ease-in;
+}
+
+#sidebar {
+    position: absolute;
+    left: 0px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background: #3B185F;
+    color: #fff;
+    transition:  all 1s ease-in;
+}
+
+#sidebar.active {
+    left: -250px;
+    transition:  all 1s ease-in-out;
+}
+
+#divMenu.active{
+    position: absolute;
+    left: 10px;
+    top: 10vh;
+    transition:  all 1s ease-in-out;
+}
+
+#sidebar .sidebar-header {
+    padding: 100px 20px 20px 20px;
+    background: #3B185F;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #B374ED;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #B374ED;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #B374ED;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
