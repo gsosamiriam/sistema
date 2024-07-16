@@ -1,5 +1,5 @@
 
-<section class="mx-auto pt-20">
+<section class="mx-auto pt-15 sectionLogin">
     <div class="container">
         <div class="row">
             <div class="col-md-4"></div>

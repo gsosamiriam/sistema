@@ -16,7 +16,6 @@ class Home extends BaseController
     {
         return 
         view('/templates/header').
-        view('login_view').
         view('/templates/footer');
     }
 
