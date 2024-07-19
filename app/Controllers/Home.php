@@ -11,15 +11,15 @@ class Home extends BaseController
     {
         return 
         view('/templates/headerSimple').
-        view('login_view').
-        view('/templates/footerSimple');
+        view('login_view');
     }
 
     public function inicio(): string
     {
         return 
         view('/templates/header').
-        view('/templates/footer');
+        view('dashboard_view');
+    
     }
 
 }

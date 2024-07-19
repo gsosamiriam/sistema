@@ -33,3 +33,9 @@
         </div>
     </div>
 </section>
+
+
+<?= JSBoot(); ?>
+
+</body>
+</html>

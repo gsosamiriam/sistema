@@ -1,13 +1,7 @@
 
-<footer>
-    <!--nav class="navbar sticky-bottom bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sticky bottom</a>
-    </div>
-    </nav-->
-</footer>
+<footer></footer>
 
-<?= JSBoot(); ?>
+
 
 </body>
 </html>

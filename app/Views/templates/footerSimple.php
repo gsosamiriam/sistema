@@ -1,6 +1,1 @@
 
-
-<?= JSBoot(); ?>
-
-</body>
-</html>
